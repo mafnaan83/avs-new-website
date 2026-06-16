@@ -1,7 +1,7 @@
 "use client";
 
-import { ReactNode, useEffect, useRef, useState } from "react";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import { ReactNode, useRef, useState } from "react";
+import { addDoc, collection } from "firebase/firestore";
 import { db } from "../FirebaseConfig";
 import Link from "next/link";
 import {
@@ -48,29 +48,13 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
-  const [servicesList, setServicesList] = useState<
-    { name: string; category: string }[]
-  >([]);
 
   const [selectedService, setSelectedService] = useState<string[]>([]);
 
   // Services
-  useEffect(() => {
-    const fetchServices = async () => {
-      const querySnapshot = await getDocs(collection(db, "services"));
-      const services: { name: string; category: string }[] = [];
-      querySnapshot.forEach((doc) => {
-        const data = doc.data();
-        console.log(data);
-        services.push({ name: data.name, category: data.category });
-      });
-      setServicesList(services);
-    };
-    fetchServices();
-  }, []);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -194,9 +178,8 @@ export default function ContactPage() {
 
             <FadeInWhenVisible delay={0.4}>
               <p className="text-lg text-gray-600 mb-8">
-                Tell us about your project through the form below. Our team will
-                quickly prepare a personalized quote and guide you through the
-                next steps.
+                Tell us what you need. Our team will quickly prepare a
+                personalized quote and guide you through the next steps.
               </p>
             </FadeInWhenVisible>
             <FadeInWhenVisible delay={0.4}>
@@ -240,7 +223,7 @@ export default function ContactPage() {
                 <h2 className="text-lg font-semibold text-gray-500">
                   Contact us
                 </h2>
-                <p className="text-gray-600">info@jscomputers.ae</p>
+                <p className="text-gray-600">info@avsgulf.ae</p>
               </div>
             </FadeInWhenVisible>
 
@@ -330,43 +313,6 @@ export default function ContactPage() {
                 )}
               </div>
 
-              {/* Services*/}
-              <div className="md:col-span-2">
-                <label className="block mb-1 font-medium">
-                  Service Interested In
-                </label>
-
-                <div className="flex flex-wrap gap-2 py-2">
-                  {servicesList.map((service, index) => (
-                    <div
-                      key={index}
-                      onClick={() => {
-                        if (selectedService.includes(service.name)) {
-                          setSelectedService(
-                            selectedService.filter((s) => s !== service.name)
-                          );
-                        } else {
-                          setSelectedService([
-                            ...selectedService,
-                            service.name,
-                          ]);
-                        }
-                      }}
-                      className={`inline-flex items-center justify-center px-4 py-2 border rounded-md cursor-pointer ${
-                        selectedService.includes(service.name)
-                          ? "border-black bg-gray-100"
-                          : "border-gray-300"
-                      }`}
-                    >
-                      {service.name}
-                    </div>
-                  ))}
-                </div>
-              </div>
-              {errors.services && (
-                <p className="text-red-500 text-sm">{errors.services}</p>
-              )}
-
               <div className="md:col-span-2">
                 <label className="block mb-1 font-medium">Message</label>
                 <textarea
@@ -385,7 +331,7 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={loading}
-              className={`text-white flex items-center scale-100 hover:scale-102 rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-gray-100 gap-2 px-6 py-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 ${
+              className={`text-white flex items-center scale-100 hover:scale-102 rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-gray-100 gap-2 px-6 py-2 bg-gradient-to-r from-[#CBA65E] via-[#AF8B47] to-[#937230] ${
                 loading ? "opacity-60 cursor-not-allowed" : ""
               }`}
             >

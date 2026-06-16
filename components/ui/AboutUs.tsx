@@ -12,7 +12,7 @@ export default function AboutUs() {
   const isInView = useInView(ref, { once: true, amount: 0.5 });
 
   return (
-    <section ref={ref} className="lg:pb-12 pt-12 px-4 sm:px-6 lg:px-2 bg-white">
+    <section ref={ref} className="lg:pb-20 pt-20 px-4 sm:px-6 lg:px-2 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-12 gap-8 items-center">
         {/* Left Column */}
         <div className="space-y-4 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -20,7 +20,7 @@ export default function AboutUs() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="rounded-md bg-blue-50 text-blue-700 py-1 px-4 text-sm font-medium w-fit"
+            className="rounded-md bg-[#FFEFD7]/50 text-[#C5A059] py-1 px-4 text-sm font-medium w-fit"
           >
             ABOUT US
           </motion.h2>
@@ -31,8 +31,8 @@ export default function AboutUs() {
             transition={{ duration: 0.4, delay: 0.2 }}
             className="lg:text-5xl text-3xl font-semibold"
           >
-            Powering Business Growth with Complete IT & Digital Solutions in the
-            <span className="bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent pl-2">
+            Moving Everyday Products Across the
+            <span className="bg-gradient-to-r from-[#C5A059] to-[#E9C176] bg-clip-text text-transparent pl-2">
               UAE
             </span>
           </motion.h2>
@@ -43,11 +43,12 @@ export default function AboutUs() {
             transition={{ duration: 0.4, delay: 0.3 }}
             className="lg:max-w-lg text-gray-500 text-justify md:text-center lg:text-justify lg:text-lg font-normal"
           >
-            JS Computers is a Dubai-based IT solutions provider delivering
-            reliable hardware, networking, surveillance, web development, and
-            digital marketing services across the UAE. Backed by over 10 years
-            of industry expertise, we help businesses grow with smart, scalable
-            technology.
+            AVS Trading is a Dubai-based FMCG trading and distribution company
+            serving businesses across the UAE. We source, store, and distribute
+            food, beverages, dairy, frozen foods, personal care, and household
+            products to supermarkets, grocery stores, and HoReCa customers. With
+            reliable delivery and cold chain capabilities, we help retailers
+            keep their shelves stocked across all seven Emirates.
           </motion.p>
 
           <motion.div
@@ -70,13 +71,13 @@ export default function AboutUs() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="relative w-full aspect-[16/10] sm:aspect-[5/3] lg:aspect-[16/10] flex items-center justify-center"
         >
-          <div className="relative w-full h-full bg-[url('/bg.png')] bg-cover bg-center drop-shadow-xl rounded-[10px] rounded-br-[80px] sm:rounded-br-[100px] lg:rounded-br-[120px] flex items-center justify-center p-4 sm:p-8">
+          <div className="relative w-full h-full  bg-cover bg-center drop-shadow-xl rounded-[10px] rounded-br-[80px] sm:rounded-br-[100px] lg:rounded-br-[120px] flex items-center justify-center p-4 sm:p-8">
             <Image
-              src="/about-us.png"
+              src="/aboutus-avs.png"
               alt="Foreground"
-              width={1030}
-              height={1030}
-              className="object-contain drop-shadow-xl rounded-[10px] rounded-br-[60px] sm:rounded-br-[80px]"
+              width={1200}
+              height={1200}
+              className="object-contain drop-shadow-xl rounded-[10px] rounded-br-[60px] sm:rounded-br-[80px] hover:scale-102 transition-transform duration-500"
             />
           </div>
         </motion.div>

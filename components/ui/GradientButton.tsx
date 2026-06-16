@@ -25,7 +25,7 @@ export default function GradientButton({
       }}
       whileTap={{ scale: 0.7 }}
       onClick={onClick}
-      className={`flex items-center gap-2 px-6 py-2 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-gray-100 ${className}`}
+      className={`flex items-center gap-2 px-6 py-2 text-white bg-gradient-to-r from-[#CBA65E] via-[#AF8B47] to-[#937230] rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-gray-100 ${className}`}
     >
       {label}
       {showArrow && <span className="ml-1">→</span>}

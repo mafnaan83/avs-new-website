@@ -1,41 +1,40 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [showServices, setShowServices] = useState(false);
-  const [showProducts, setShowProducts] = useState(false);
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  // const [showProducts, setShowProducts] = useState(false);
+  // const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  // const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const pathname = usePathname();
-  const servicesRef = useRef<HTMLLIElement | null>(null);
+  // const servicesRef = useRef<HTMLLIElement | null>(null);
 
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Blog", path: "/blog" },
+    { name: "Blog", path: "/blogs" },
+    { name: "Products", path: "/products" },
   ];
 
-  const serviceLinks = [
-    { name: "Digital Services", path: "/digital-services" },
-    { name: "ELV", path: "/elv" },
-    { name: "Surveillance", path: "/surveillance" },
-    { name: "Structured Cabling", path: "/structured-cabling" },
-  ];
+  // const serviceLinks = [
+  //   { name: "Digital Services", path: "/digital-services" },
+  //   { name: "ELV", path: "/elv" },
+  //   { name: "Surveillance", path: "/surveillance" },
+  //   { name: "Structured Cabling", path: "/structured-cabling" },
+  // ];
 
-  const productLinks = [
-    { name: "Laptops & Desktops", path: "/laptops-desktop" },
-    { name: "Servers & Storage", path: "/servers-storage" },
-    { name: "Networking Products", path: "/networking" },
-    { name: "Surveillance Products", path: "/surveillance-products" },
-  ];
+  // const productLinks = [
+  //   { name: "Laptops & Desktops", path: "/laptops-desktop" },
+  //   { name: "Servers & Storage", path: "/servers-storage" },
+  //   { name: "Networking Products", path: "/networking" },
+  //   { name: "Surveillance Products", path: "/surveillance-products" },
+  // ];
 
   useEffect(() => {
     const handleResize = () => {
@@ -83,7 +82,7 @@ export default function Navbar() {
         >
           {/* Logo */}
           <motion.div className="text-xl font-bold">
-            <Image src="/logo.png" alt="Logo" width={40} height={40} />
+            <Image src="/avs-logo.png" alt="Logo" width={50} height={50} />
           </motion.div>
 
           {/* Desktop Nav */}
@@ -94,14 +93,14 @@ export default function Navbar() {
                   href={link.path}
                   className={`relative transition-all duration-300 ease-in-out ${
                     pathname === link.path
-                      ? "text-blue-600 font-medium"
-                      : "hover:text-blue-500"
+                      ? "text-[#C5A059] font-medium"
+                      : "hover:text-[#E9C176]"
                   }`}
                 >
                   {link.name}
                   {pathname === link.path && (
                     <motion.div
-                      className="absolute left-1/2 -translate-x-1/2 bottom-[-4px] w-1 h-1 bg-blue-600 rounded-full"
+                      className="absolute left-1/2 -translate-x-1/2 bottom-[-4px] w-1 h-1 bg-[#C5A059] rounded-full"
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.3 }}
@@ -112,7 +111,7 @@ export default function Navbar() {
             ))}
 
             {/* Services Dropdown */}
-            <li
+            {/* <li
               className="relative"
               ref={servicesRef}
               onMouseEnter={() => setShowServices(true)}
@@ -149,10 +148,10 @@ export default function Navbar() {
                   </motion.ul>
                 )}
               </AnimatePresence>
-            </li>
+            </li> */}
 
             {/* Products Dropdown */}
-            <li
+            {/* <li
               className="relative"
               onMouseEnter={() => setShowProducts(true)}
               onMouseLeave={() => setShowProducts(false)}
@@ -188,7 +187,7 @@ export default function Navbar() {
                   </motion.ul>
                 )}
               </AnimatePresence>
-            </li>
+            </li> */}
           </ul>
 
           {/* Contact Button */}
@@ -198,7 +197,7 @@ export default function Navbar() {
             className="hidden md:block"
           >
             <Link href="/contact">
-              <button className="px-4 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all">
+              <button className="px-4 py-1 bg-[#E9C176] text-black rounded-md hover:bg-[#C5A059] transition-all">
                 Contact Us
               </button>
             </Link>
@@ -262,7 +261,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`text-lg ${
                   pathname === link.path
-                    ? "text-blue-600 font-medium"
+                    ? "text-[#C5A059] font-medium"
                     : "text-gray-800"
                 }`}
               >
@@ -272,7 +271,7 @@ export default function Navbar() {
           ))}
 
           {/* Mobile Services Dropdown */}
-          <li>
+          {/* <li>
             <button
               onClick={() => setMobileServicesOpen((prev) => !prev)}
               className="text-lg text-gray-800 flex items-center justify-between w-full"
@@ -305,10 +304,10 @@ export default function Navbar() {
                 </motion.ul>
               )}
             </AnimatePresence>
-          </li>
+          </li> */}
 
           {/* Mobile Products Dropdown */}
-          <li>
+          {/* <li>
             <button
               onClick={() => setMobileProductsOpen((prev) => !prev)}
               className="text-lg text-gray-800 flex items-center justify-between w-full"
@@ -341,11 +340,11 @@ export default function Navbar() {
                 </motion.ul>
               )}
             </AnimatePresence>
-          </li>
+          </li> */}
 
           <li className="mt-4">
             <Link href="/contact" onClick={() => setIsOpen(false)}>
-              <button className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-all">
+              <button className="w-full px-4 py-2 bg-[#E9C176] text-black rounded-md hover:bg-[#C5A059] transition-all">
                 Contact Us
               </button>
             </Link>

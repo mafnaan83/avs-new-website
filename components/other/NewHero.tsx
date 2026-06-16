@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import WhiteButton from "../ui/ButtonWhite";
 import { useRouter } from "next/navigation";
 
-
 const NewHero = () => {
   const router = useRouter();
   return (

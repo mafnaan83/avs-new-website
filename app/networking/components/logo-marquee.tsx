@@ -6,13 +6,16 @@ import React, { useRef } from "react";
 export const LogosMarquee = () => {
   // Images for the infinite scroll - using Unsplash URLs
   const images = [
-    "https://firebasestorage.googleapis.com/v0/b/jscomputer-603dc.firebasestorage.app/o/networking-logos%2FDocument%20Attestaion%20services%20(2).png?alt=media&token=211d8347-f2cf-4b79-9720-f21ed519f65f",
-    "https://firebasestorage.googleapis.com/v0/b/jscomputer-603dc.firebasestorage.app/o/networking-logos%2FDocument%20Attestaion%20services%20(3).png?alt=media&token=9ef1aa30-00e0-40d2-a026-7725095ba9f4",
-    "https://firebasestorage.googleapis.com/v0/b/jscomputer-603dc.firebasestorage.app/o/networking-logos%2FDocument%20Attestaion%20services%20(4).png?alt=media&token=5edd82f3-078b-4d99-ba91-7d1db78cb010",
-    "https://firebasestorage.googleapis.com/v0/b/jscomputer-603dc.firebasestorage.app/o/networking-logos%2FDocument%20Attestaion%20services%20(5).png?alt=media&token=682809d2-a04d-4db6-aaf7-d91478f20c23",
-    "https://firebasestorage.googleapis.com/v0/b/jscomputer-603dc.firebasestorage.app/o/networking-logos%2FDocument%20Attestaion%20services%20(6).png?alt=media&token=34fb6110-2ccf-4c0b-bcd6-9a2753b642fa",
-    "https://firebasestorage.googleapis.com/v0/b/jscomputer-603dc.firebasestorage.app/o/networking-logos%2FDocument%20Attestaion%20services%20(7).png?alt=media&token=316c8c77-d126-4d70-a015-04b69a44121f",
-    "https://firebasestorage.googleapis.com/v0/b/jscomputer-603dc.firebasestorage.app/o/networking-logos%2FDocument%20Attestaion%20services.png?alt=media&token=74c77fbd-ea1d-4f1a-a58c-3dc56e87ac69",
+    "/avs-brand-1.png",
+    "/avs-brand-2.png",
+    "/avs-brand-3.png",
+    "/avs-brand-4.png",
+    "/avs-brand-5.png",
+    "/avs-brand-6.png",
+    "/avs-brand-7.png",
+    "/avs-brand-8.png",
+    "/avs-brand-9.png",
+    "/avs-brand-10.png",
   ];
 
   // Duplicate images for seamless loop
@@ -74,7 +77,7 @@ export const LogosMarquee = () => {
               }}
               className={`mr-2 inline-block ${
                 ["Brands", "transformation"].includes(word)
-                  ? "bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent"
+                  ? "bg-gradient-to-r from-[#C5A059] to-[#E9C176] bg-clip-text text-transparent"
                   : ""
               }`}
             >
@@ -83,8 +86,8 @@ export const LogosMarquee = () => {
           ))}
         </h2>
         <p className="max-w-2xl text-center text-lg text-gray-500 py-8">
-          We supply a wide range of new and certified used laptops, desktops,
-          and accessories from trusted global manufacturers.
+          We work with a wide range of local and international FMCG brands,
+          supplying quality products to retailers and businesses across the UAE.
         </p>
         {/* Background gradient */}
         <div className="absolute inset-0 z-0" />

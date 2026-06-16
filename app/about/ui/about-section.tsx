@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import HeadingComponent from "@/components/ui/Heading";
 import { useRouter } from "next/navigation";
-import WhiteButton from "@/components/ui/ButtonWhite";
+import GradientButton from "@/components/ui/GradientButton";
 
 interface AboutUsSectionProps {
   heading?: string;
@@ -63,7 +63,7 @@ export default function AboutUsSection({
               {para}
             </p>
           ))}
-          <WhiteButton
+          <GradientButton
             onClick={() => router.push("/contact")}
             label="Talk to us"
             showArrow

@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <h2 className="text-xl font-bold text-white">Js Computers</h2>
+          <h2 className="text-xl font-bold text-white">AVS Trading</h2>
           <p className="text-sm mt-2 text-gray-400">
-            Empowering your digital journey.
+            FMCG, Delivered Across the UAE.
           </p>
         </div>
 
@@ -48,9 +48,12 @@ export default function Footer() {
             Contact
           </h3>
           <ul className="text-sm space-y-2">
-            <li>Email: info@jscomputers.ae</li>
-            <li>Phone: +971 582800809</li>
-            <li>Address: Dubai, UAE</li>
+            <li>Email: info@avsgulf.ae</li>
+            <li>Phone: +971588171336</li>
+            <li>
+              Address: Office #102 Buliding Name Alqaz near Alfurjan Bank PO Box
+              : 32298
+            </li>
           </ul>
         </div>
 
@@ -78,7 +81,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} JS Computers. All rights reserved.
+        &copy; {new Date().getFullYear()} AVS Trading. All rights reserved.
       </div>
     </footer>
   );

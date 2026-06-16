@@ -1,31 +1,25 @@
 import ContactPage from "./contact-page";
-import AddressesSection from "./ui/address-section";
 
 export const metadata = {
-  title:
-    "JS Computer | Contact Us – IT Solutions, Refurbished Laptops & Networking Products in Dubai",
+  title: "Contact AVS Trading | FMCG Supplier in Dubai, UAE",
   description:
-    "Get in touch with JS Computer – Dubai’s trusted IT company offering refurbished laptops, networking products, and custom software solutions across the UAE.",
+    "Get in touch with AVS Trading for FMCG supply and distribution inquiries in Dubai and across the UAE. Reach out for product orders, partnerships, or general questions.",
   keywords: [
-    "JS Computer Dubai",
-    "Contact IT company Dubai",
-    "IT support Dubai",
-    "app and web development UAE",
-    "hardware distributor UAE",
-    "Dubai tech company",
-    "second-hand laptops UAE",
-    "refurbished laptops UAE",
+    "AVS Trading Dubai",
+    "FMCG supplier Dubai",
+    "Distribution company UAE",
+    "Food & Beverage supplier UAE",
   ],
   alternates: {
-    canonical: "https://jscomputer.ae/contact",
+    canonical: "https://avsgulf.ae/contact",
   },
   openGraph: {
     images: [
       {
-        url: "/opengraph-contact-jscomputer.jpg",
+        url: "/opengraph-contact-avsgulf.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact JS Computer - Leading IT Company in Dubai",
+        alt: "Contact AVS Trading - FMCG Supplier in Dubai",
       },
     ],
   },
@@ -35,7 +29,6 @@ export default function Contact() {
   return (
     <div>
       <ContactPage />
-      <AddressesSection />
     </div>
   );
 }

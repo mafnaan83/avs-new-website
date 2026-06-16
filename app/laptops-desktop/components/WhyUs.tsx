@@ -2,15 +2,15 @@ import React from "react";
 import {
   ShieldCheck,
   LaptopMinimalCheck,
-  HandCoins,
   HeartHandshakeIcon,
+  Lightbulb,
 } from "lucide-react";
 import FeatureCard from "./Helpers/featured-card";
 import WhiteButton from "@/components/ui/ButtonWhite";
 
-const WhyUs = () => {
+const WhyUsAVS = () => {
   return (
-    <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+    <div className="bg-gradient-to-br from-[#806120] via-[#9F7E3A] to-[#BD9953] relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -37,14 +37,15 @@ const WhyUs = () => {
           />
           <defs>
             <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#3b82f6" stopOpacity="0" />
-              <stop offset="50%" stopColor="#3b82f6" stopOpacity="1" />
-              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+              <stop offset="0%" stopColor="#C5A059" stopOpacity="0" />
+              <stop offset="50%" stopColor="#C5A059" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#C5A059" stopOpacity="0" />
             </linearGradient>
+
             <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0" />
-              <stop offset="50%" stopColor="#8b5cf6" stopOpacity="1" />
-              <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0" />
+              <stop offset="0%" stopColor="#937230" stopOpacity="0" />
+              <stop offset="50%" stopColor="#C5A059" stopOpacity="0.7" />
+              <stop offset="100%" stopColor="#937230" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -73,26 +74,26 @@ const WhyUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FeatureCard
               icon={ShieldCheck}
-              title="Authenticity"
-              description="Genuine new & certified used laptops and desktops"
+              title="Reliability"
+              description="We keep your shelves stocked without delays."
             />
 
             <FeatureCard
               icon={LaptopMinimalCheck}
-              title="Readiness"
-              description="Complete setups with accessories, ready to deploy"
+              title="Range"
+              description="A wide range of products, from a single supplier."
             />
 
             <FeatureCard
-              icon={HandCoins}
-              title="Affordability"
-              description="Bulk pricing for offices, schools & resellers"
+              icon={Lightbulb}
+              title="Insight"
+              description="We know what UAE retailers and customers need."
             />
 
             <FeatureCard
               icon={HeartHandshakeIcon}
-              title="Reliability"
-              description="Fast delivery and local support you can count on"
+              title="Partnership"
+              description="Working with retailers to grow together, not just to fill orders."
             />
           </div>
         </div>
@@ -101,4 +102,4 @@ const WhyUs = () => {
   );
 };
 
-export default WhyUs;
+export default WhyUsAVS;

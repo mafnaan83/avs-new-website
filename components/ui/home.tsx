@@ -54,7 +54,7 @@ export function HeroSectionOne() {
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
           Your Trusted Partner for Seamless IT Services in Dubai. From
-          Cutting-Edge Solutions to Expert Support – We Deliver Excellence.
+          Cutting-Edge Solutions to Expert Support – Weeee Deliver Excellence.
         </motion.p>
         <motion.div
           initial={{

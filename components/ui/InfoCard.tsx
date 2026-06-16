@@ -16,7 +16,7 @@ export default function InfoCard({
   bgColor,
 }: InfoCardProps) {
   return (
-    <div className="px-5 py-6 bg-blue-50 rounded-xl flex gap-4">
+    <div className="px-5 py-6 bg-[#E9C176]/10 rounded-xl flex gap-4">
       <div
         className={`w-14 h-6 flex items-center justify-center rounded-sm ${bgColor}`}
       >

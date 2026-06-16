@@ -4,10 +4,10 @@ import HeroSection from "./components/HeroSection";
 import AboutUsSection from "../about/ui/about-section";
 import Brands from "./components/ServicesBrands";
 import AppleMacSection from "@/components/ui/AppleMacSection";
-import WhyUs from "./components/WhyUs";
 import BusinessTypes from "./components/BusinessTypes";
 import ProductCarousel from "./components/HorizontalProductScroll";
 import { Desktop } from "@/components/ui/Desktop";
+import WhyUsAVS from "./components/WhyUs";
 
 export const metadata = {
   title: "Laptops & Desktops Services – New & Refurbished Laptops Dubai",
@@ -63,7 +63,7 @@ const page = () => {
         imagePosition="left"
       />
       <AppleMacSection />
-      <WhyUs />
+      <WhyUsAVS />
       <BusinessTypes />
       <ProductCarousel
         products={[

@@ -33,16 +33,17 @@ const AboutDigital = () => {
       <div className="flex flex-col lg:flex-row lg:gap-8 gap-2 pt-5">
         <FadeInWhenVisible delay={0.1}>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold max-w-xl">
-            Technologies We Use to Build Powerful Digital Solutions
+            Supplying Everyday Essentials Across the UAE
           </h2>
         </FadeInWhenVisible>
 
         <FadeInWhenVisible delay={0.2}>
           <div className="max-w-xl">
             <p className="text-base md:text-lg pb-5">
-              We use modern frameworks and trusted platforms to build fast,
-              secure, and scalable websites, apps, and digital systems. Our tech
-              stack is designed to support businesses of all sizes across Dubai.
+              From food and beverages to personal care and household essentials,
+              AVS Trading offers a diverse range of FMCG products tailored to
+              the needs of retailers, supermarkets, and HoReCa businesses across
+              the UAE.
             </p>
             <WhiteButton
               onClick={() => router.push("/about")}

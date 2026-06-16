@@ -9,39 +9,41 @@ const WhyChooseUs = () => {
   const content = [
     "Authentic Products with Real Cost Savings",
     "You'll pay less than gray market prices",
-    "One Stop for Everything That Powers Your Business",
+    "One Stop for best FMCG brands in UAE",
   ];
 
   const stats = [
     { value: "10+", label: "Years in market" },
-    { value: "50+", label: "Clients trust us" },
-    { value: "120+", label: "Projects delivered" },
-    { value: "15+", label: "Expert team members" },
+    { value: "500+", label: "Retail Partners" },
+    { value: "1000+", label: "SKUs Available" },
+    { value: "7", label: "Emirates Covered" },
     { value: "24/7", label: "Support availability" },
   ];
 
   const headingRef = useRef(null);
   const isHeadingInView = useInView(headingRef, { once: true, amount: 0.5 });
-  const words = ["Why", "Choose", "JS Computers"];
+  const words = ["Why", "Choose", "AVS Trading"];
   return (
-    <section className="max-w-7xl mx-auto px-4 pb-20">
+    <section className="max-w-7xl mx-auto px-4 py-20">
       {/* Top: Left and Right Grid */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
         {/* Left Side */}
         <div className="md:col-span-2">
           <p className="text-gray-700 text-base mb-6 text-justify">
-            Discover how our platform is designed to elevate your business with
-            smart, scalable solutions. And there will be more content here
-            becuase we need to have the best website in uae. We are the best
-            laptop dealers in uae when it comes to servers we don`t fall behind
-            well i had to write more because it should match the download
+            Businesses across the UAE rely on AVS Trading for consistent supply,
+            efficient distribution, and dependable service. With a wide FMCG
+            portfolio, warehousing and cold chain capabilities, and delivery
+            coverage across all seven Emirates, we help retailers and HoReCa
+            businesses keep products moving from supplier to shelf. Our focus is
+            on building long-term partnerships and supporting customers with
+            solutions that match the pace of the UAE market.
           </p>
           <WhiteButton label="Talk to us" showArrow />
         </div>
 
         {/* Right Side */}
         <div className="text-right md:col-span-3 md:text-left">
-          <h2 className="rounded-md bg-blue-50 text-blue-700 py-1 px-4 text-sm font-medium w-fit mb-4">
+          <h2 className="rounded-md bg-[#FFEFD7]/60 text-[#C5A059] py-1 px-4 text-sm font-medium w-fit mb-4">
             YOUR PARTNER
           </h2>
           <h2
@@ -64,7 +66,7 @@ const WhyChooseUs = () => {
                 }}
                 className={`mr-2 inline-block ${
                   ["JS Computers", "transformation"].includes(word)
-                    ? "bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent"
+                    ? "bg-gradient-to-r from-[#C5A059] to-[#FFEFD7] bg-clip-text text-transparent"
                     : ""
                 }`}
               >
@@ -120,7 +122,7 @@ const WhyChooseUs = () => {
       {/* Numbers */}
       <div className="flex flex-col md:flex-row mt-10 items-center md:items-start gap-10">
         <h2 className="text-2xl font-medium md:self-center text-center md:text-left min-w-[200px]">
-          JS Computers by <br /> the numbers
+          AVS Trading by <br /> the numbers
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 px-6">

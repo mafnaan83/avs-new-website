@@ -1,5 +1,5 @@
 "use client";
-import { HardDrive, Laptop, Router, Video } from "lucide-react";
+import { Handshake, Package, Truck, Warehouse } from "lucide-react";
 import WhiteButton from "./ButtonWhite";
 import InfoCard from "./InfoCard";
 import { motion, useInView } from "framer-motion";
@@ -31,24 +31,19 @@ const WhyUs = () => {
   const router = useRouter();
   return (
     <div className="py-15 px-5 md:px-10 lg:px-20">
-      <FadeInWhenVisible>
-        <h2 className="rounded-md bg-blue-50 text-blue-700 py-1 px-4 text-sm font-medium w-fit">
-          WHY US
-        </h2>
-      </FadeInWhenVisible>
-
       <div className="flex flex-col lg:flex-row lg:gap-8 gap-2 pt-5">
         <FadeInWhenVisible delay={0.1}>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold max-w-xl">
-            What Makes Us Different From Others
+            Why Businesses Work With AVS Trading
           </h2>
         </FadeInWhenVisible>
 
         <FadeInWhenVisible delay={0.2}>
           <div className="max-w-xl">
             <p className="text-base md:text-lg pb-5">
-              Where quality refurbished tech meets metro-grade reliability – all
-              backed by local warranties.
+              Our operations are built around dependable supply, efficient
+              distribution, and lasting partnerships that support retailers and
+              businesses across the UAE.
             </p>
             <WhiteButton
               onClick={() => router.push("/about")}
@@ -62,36 +57,36 @@ const WhyUs = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:pt-10 pt-8">
         <FadeInWhenVisible delay={0.3}>
           <InfoCard
-            icon={<HardDrive className="h-4 w-4 text-white" />}
-            title="Trunkey Solutions"
-            content="We deliver complete IT and digital solutions, managing everything from setup to execution."
+            icon={<Package className="h-4 w-4 text-white" />}
+            title="FMCG Distribution"
+            content="Supplying food, beverage, and household products to retailers across Dubai and the UA"
             bgColor="bg-blue-700"
           />
         </FadeInWhenVisible>
 
         <FadeInWhenVisible delay={0.4}>
           <InfoCard
-            icon={<Laptop className="h-4 w-4 text-white" />}
-            title="UAE’s Best Prices"
-            content="Guaranteed lowest prices on genuine IT hardware, with bulk discounts for businesses."
+            icon={<Warehouse className="h-4 w-4 text-white" />}
+            title="Logistics & Warehousing"
+            content="Storage and delivery infrastructure to keep products moving from warehouse to shelf."
             bgColor="bg-green-600"
           />
         </FadeInWhenVisible>
 
         <FadeInWhenVisible delay={0.5}>
           <InfoCard
-            icon={<Video className="h-4 w-4 text-white" />}
-            title="Hassle-Free Warranty"
-            content="1 year coverage with local service centers and fast Arabic/English support."
+            icon={<Truck className="h-4 w-4 text-white" />}
+            title="Supply Chain Expertise"
+            content=" From sourcing and warehousing to last-mile delivery, we manage the complete supply chain efficiently."
             bgColor="bg-pink-400"
           />
         </FadeInWhenVisible>
 
         <FadeInWhenVisible delay={0.6}>
           <InfoCard
-            icon={<Router className="h-4 w-4 text-white" />}
-            title="Proven Network Performance"
-            content="The same enterprise switches and routers trusted by Dubai Metro - built for reliability."
+            icon={<Handshake className="h-4 w-4 text-white" />}
+            title="Brand Partnerships"
+            content="Representing and growing FMCG brands within the UAE retail market."
             bgColor="bg-yellow-400"
           />
         </FadeInWhenVisible>

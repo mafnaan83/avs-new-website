@@ -3,18 +3,18 @@ import { brandsData, BrandSlug } from "../data/brands";
 import ProductCard from "../components/ProductsCard";
 import { TextParallaxContentExample } from "../components/hero-products";
 
-export default function BrandProductsPage({
+export default async function BrandProductsPage({
   params,
 }: {
-  params: { brand: string };
+  params: Promise<{ brand: string }>;
 }) {
-  const brand = brandsData[params.brand as BrandSlug];
+  const { brand: brandSlug } = await params;
+  const brand = brandsData[brandSlug as BrandSlug];
 
   if (!brand) notFound();
 
   return (
     <>
-
       {/* Hero Section — now uses the parallax component with brand data */}
       <TextParallaxContentExample
         imgUrl={brand.heroImage}

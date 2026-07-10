@@ -1,26 +1,27 @@
 "use client";
 
-import React, { useRef, type ReactNode } from "react";
+import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import AboutDigital from "@/app/digital-services/Components/AboutDigital";
 
 interface TextParallaxContentProps {
   imgUrl: string;
   subheading: string;
   heading: string;
-  children: ReactNode;
 }
 
-export const TextParallaxContentExample = () => {
+// 👇 Now accepts props instead of being hardcoded
+export const TextParallaxContentExample = ({
+  imgUrl,
+  subheading,
+  heading,
+}: TextParallaxContentProps) => {
   return (
     <div className="bg-white">
       <TextParallaxContent
-        imgUrl="/products-hero-avs.png"
-        subheading="Serving Retail with "
-        heading="a Wide Range of FMCG Products"
-      >
-        <AboutDigital />
-      </TextParallaxContent>
+        imgUrl={imgUrl}
+        subheading={subheading}
+        heading={heading}
+      />
     </div>
   );
 };
@@ -31,7 +32,6 @@ const TextParallaxContent = ({
   imgUrl,
   subheading,
   heading,
-  children,
 }: TextParallaxContentProps) => {
   return (
     <div style={{ paddingLeft: IMG_PADDING, paddingRight: IMG_PADDING }}>
@@ -39,7 +39,6 @@ const TextParallaxContent = ({
         <StickyImage imgUrl={imgUrl} />
         <OverlayCopy heading={heading} subheading={subheading} />
       </div>
-      {children}
     </div>
   );
 };
@@ -100,10 +99,10 @@ const OverlayCopy = ({ subheading, heading }: OverlayCopyProps) => {
       style={{ y, opacity }}
       className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
     >
-      <p className="mb-2 text-center text-4xl font-semibold md:text-6xl">
+      <p className="mb-2 text-center text-4xl font-semibold md:text-4xl">
         {subheading}
       </p>
-      <p className="text-center text-4xl font-semibold md:text-6xl">
+      <p className="text-center max-w-4xl text-align:justify text-lg font-normal md:text-lg px-5">
         {heading}
       </p>
     </motion.div>

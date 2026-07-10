@@ -1,10 +1,14 @@
 import React from "react";
-import { TextParallaxContentExample } from "./components/hero-products";
+import Hero from "./components/products-hero";
+import Section1 from "./components/section-1";
+import BrandCards from "./components/brand-cards";
 
 const Products = () => {
   return (
     <div>
-      <TextParallaxContentExample />
+      <Hero />
+      <Section1 />
+      <BrandCards />
     </div>
   );
 };

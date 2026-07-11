@@ -124,6 +124,140 @@ export const brandsData = {
       },
     ],
   },
+
+  tang: {
+    name: "Tang",
+    slug: "tang",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/tang%2Ftang-avs-3.png?alt=media&token=ebed7397-a25f-436b-b0de-7fdb82af8d0f",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/tang%2Ftang_hero_banner.jpeg?alt=media&token=4fb21328-a2df-4151-8a13-eb5157a2995e",
+    description:
+      "Tang® has provided an innovative and refreshing approach to everyday hydration and family beverages since 1957. Fortified with essential vitamins and minerals, Tang® powdered drink mixes deliver a distinctive, fruity, and vibrantly fresh taste that instantly revitalizes. ",
+    products: [
+      {
+        name: "Tang Lemon flavoured drinking powder",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/tang%2FLemon%20Background%20Removed.png?alt=media&token=4f525659-4bd0-4c84-a82c-bbb1e7b7950a",
+      },
+      {
+        name: "Tang Mango flavoured drinking powder",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/tang%2FMango%20Background%20Removed.png?alt=media&token=8c3e7fb2-2dbd-4d6e-9c04-0dacf9ea5c81",
+      },
+      {
+        name: "Tang Orange flavoured drinking powder",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/tang%2Forange.png?alt=media&token=185d14aa-4975-4351-a2ae-edebceeb583e",
+      },
+      {
+        name: "Tang Pineapple flavoured drinking powder",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/tang%2Fpineapple-bg.png?alt=media&token=c25295d8-d37a-4992-b546-0bad7109edfd",
+      },
+      {
+        name: "Tang Tropicana flavoured drinking powder",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/tang%2Ftropicana.png?alt=media&token=c66a341f-14a6-456b-9e84-dacc08993cf9",
+      },
+    ],
+  },
+
+  halls: {
+    name: "Halls",
+    slug: "halls",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Fhalls-avs-1.png?alt=media&token=f0cc8902-7cdf-4fb4-bf6e-0b31498fe2b0",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Fhalls_hero_banner.jpeg?alt=media&token=532ec7e0-5879-4b68-bf8d-3acf38a8a75c",
+    description:
+      "Halls® has provided advanced soothing relief and crisp, invigorating refreshment for over a century. Infused with a high-quality menthol formula, Halls® lozenges deliver a distinctive, cooling, and powerfully fresh sensation that clears the senses instantly. Combining functional relief with everyday comfort, it remains a globally trusted staple for instant clarity on the go.",
+    products: [
+      {
+        name: "Halls Defense",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Fhalls-d.png?alt=media&token=1e6d020a-66c0-4b63-b0f1-3b894ed49e5b",
+      },
+      {
+        name: "Halls Soothing",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Fsoothing-1.png?alt=media&token=64bf51ec-8183-4908-bd4a-ad97295f8806",
+      },
+      {
+        name: "Halls Minis",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Fminis-1.png?alt=media&token=f0ec3b04-07c2-4dcc-a657-eb59f0cf2ec0",
+      },
+      {
+        name: "Halls Relief",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Freleif-1.png?alt=media&token=aa4fec91-aa82-4eb5-bd28-6e92e7e70114",
+      },
+    ],
+  },
+
+  pepsi: {
+    name: "Pepsi",
+    slug: "pepsi",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/pepsi%2Fpepsi-avs-1.png?alt=media&token=39723288-61de-46b5-8a8b-57e12fedb513",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/pepsi%2Fpepsi_modern_hero.jpeg?alt=media&token=3974517c-e169-456e-8865-a603868a61db",
+    description:
+      "Pepsi® has offered an uncompromising approach to bold refreshment and youthful energy since 1898. Crafted with a unique blend of high-quality ingredients, Pepsi® cola delivers a distinctive, crisp, and vibrantly sweet taste that instantly revitalizes. Combining iconic flavor with global cultural appeal, it remains a trusted household favorite and an essential beverage staple for shared moments worldwide.",
+    products: [
+      {
+        name: "Diet Pepsi",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/pepsi%2Fproduct_image_pepsi_diet_0.png?alt=media&token=1b3cee90-53a3-4b9f-a227-d6f988cb370e",
+      },
+      {
+        name: "Zero Sugar Pepsi",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/pepsi%2Fproduct_image_pepsi_zero_0.png?alt=media&token=d7833bb0-72ec-4a08-b65a-cf36513bb64f",
+      },
+      {
+        name: "Pepsi",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/pepsi%2Fproduct_image_pepsi_0.png?alt=media&token=6cbe0fbc-79e5-4f11-8a23-ad2a9d85e767",
+      },
+    ],
+  },
+
+  alchai: {
+    name: "Alchai",
+    slug: "alchai",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Alchai%2Falchai-avs-1.png?alt=media&token=0b696c78-55d2-41eb-8542-3248537fbccf",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Alchai%2Falchai_tea_hero.jpeg?alt=media&token=b903a2de-de2c-4c8e-a1d4-217aeff68433",
+    description:
+      "Al Chai® has held an uncompromising approach to delivering premium, ethically sourced Ceylon teas. Grown in the world-famous fields of Sri Lanka and handpicked with strict quality standards, Al Chai® offers a distinctive, deeply aromatic, and richly fresh taste. Combining traditional tea mastery with beloved regional varieties like their signature cardamom blend, the brand delivers an authentic and comforting beverage experience. It remains a trusted household staple and a preferred choice for traditional tea lovers globally.",
+    products: [],
+  },
+
+  barni: {
+    name: "Barni",
+    slug: "barni",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/barni%2Fbarni-avs-1.png?alt=media&token=ae1276c3-11b5-4d13-b07a-dadf0384995a",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/barni%2Fbarni_creative_hero.jpeg?alt=media&token=73fcd6fd-5a32-44e5-9364-8e19c21e0f8c",
+    description:
+      "Barni® has maintained a playful and uncompromising approach to creating wholesome, kid-friendly treats since 1996. Baked into its iconic, signature bear shape with high-quality ingredients like fresh eggs, milk, and chocolate, Barni® soft sponge cakes deliver a distinctive, creamy, and delightfully fresh taste. Combining imaginative fun with absolute convenience and no artificial preservatives, it remains a globally trusted household favorite and an essential lunchbox staple for parents and children alike.",
+    products: [],
+  },
+
+  clorets: {
+    name: "Clorets",
+    slug: "clorets",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/clorets%2Fclorets-avs-1.png?alt=media&token=1d128bd3-2bbc-45d5-bb86-fc2d9ff8d0d7",
+    heroImage: "",
+    description:
+      "Clorets® has held an uncompromising approach to delivering ultimate breath freshness and oral confidence since 1951. Formulated with high-quality ingredients and its signature active chlorophyll, Clorets® gums and mints deliver a distinctive, clean, and powerfully fresh taste. Combining advanced breath control with everyday convenience, it remains a globally trusted pocket staple for immediate refreshment on the go.",
+    products: [],
+  },
 };
 
 export type BrandSlug = keyof typeof brandsData;

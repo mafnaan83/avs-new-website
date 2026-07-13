@@ -8,7 +8,7 @@ interface ProductCardProps {
   slug?: string;
 }
 
-const WHATSAPP_NUMBER = "+971506501756"; // 👈 replace with your number
+const WHATSAPP_NUMBER = "+971588171336"; // 👈 replace with your number
 
 export default function ProductCard({ name, image, slug }: ProductCardProps) {
   const handleWhatsAppClick = () => {

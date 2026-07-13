@@ -167,7 +167,7 @@ export const brandsData = {
     name: "Halls",
     slug: "halls",
     cardImage:
-      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Fhalls-avs-1.png?alt=media&token=f0cc8902-7cdf-4fb4-bf6e-0b31498fe2b0",
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Fhalls-avs-1.png?alt=media&token=c54cd63e-4403-4e76-9497-44dc49e8ec14",
     heroImage:
       "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/halls%2Fhalls_hero_banner.jpeg?alt=media&token=532ec7e0-5879-4b68-bf8d-3acf38a8a75c",
     description:
@@ -253,10 +253,150 @@ export const brandsData = {
     slug: "clorets",
     cardImage:
       "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/clorets%2Fclorets-avs-1.png?alt=media&token=1d128bd3-2bbc-45d5-bb86-fc2d9ff8d0d7",
-    heroImage: "",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/clorets%2Fclorets_hero_clean.jpeg?alt=media&token=d8944e33-326c-4ee9-b85a-594ac0a49dd8",
     description:
       "Clorets® has held an uncompromising approach to delivering ultimate breath freshness and oral confidence since 1951. Formulated with high-quality ingredients and its signature active chlorophyll, Clorets® gums and mints deliver a distinctive, clean, and powerfully fresh taste. Combining advanced breath control with everyday convenience, it remains a globally trusted pocket staple for immediate refreshment on the go.",
     products: [],
+  },
+
+  greenleaf: {
+    name: "Greenleaf",
+    slug: "greenleaf",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2Fgreen-avs-1.png?alt=media&token=a711f564-d040-4d1a-a394-8fed1ae347e9",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2Fgreenleaf_hero.jpeg?alt=media&token=2b90f73f-4d33-4b88-b257-90737463762a",
+    description:
+      "Green Leaf is best known for making traditional, homestyle pickles and relishes that focus heavily on crisp texture and sharp, tangy flavors. Instead of over-processing, the brand relies on classic brining methods and heavily spiced vinegar mixes to give their pickles that signature 'snap' when you bite into them. They are a staple in kitchens for anyone looking to easily upgrade a backyard barbecue burger, chop up a quick relish for hot dogs, or just grab a crunchy, sour snack straight from the jar.",
+    products: [
+      {
+        name: "GL Pickled Turnips",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG1%20Background%20Removed.png?alt=media&token=2dfc6f3f-de75-459f-bcc5-663c8a4bde7f",
+      },
+      {
+        name: "GL Pickled Peppers",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG2%20Background%20Removed.png?alt=media&token=19e6f0e7-26ab-48dc-89d6-f92550605143",
+      },
+      {
+        name: "GL Mixed Pickles",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG3%20Background%20Removed.png?alt=media&token=2b229b82-06fa-42df-9ea7-d28a821bf7c0",
+      },
+      {
+        name: "GL Pickled Vine Leaves",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG4%20Background%20Removed.png?alt=media&token=1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+      },
+      {
+        name: "GL Pickled Cucumber",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG5%20Background%20Removed.png?alt=media&token=3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r",
+      },
+      {
+        name: "GL Pomegranate Juice Organic",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG6%20Background%20Removed.png?alt=media&token=21851746-9c5f-4ac2-9c48-75e4a7738a63",
+      },
+      {
+        name: "GL Coconut Water",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG7%20Background%20Removed.png?alt=media&token=0358e100-984a-47d0-b1dc-40dba2130191",
+      },
+      {
+        name: "GL Coconut water Watermelon",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG8%20Background%20Removed.png?alt=media&token=9e517187-dd9c-4ee3-97b9-a148b61b8c0a",
+      },
+      {
+        name: "GL Coconut Water Lychee",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG9%20Background%20Removed.png?alt=media&token=4f80e13f-05d0-46e7-b344-711aa965c02f",
+      },
+      {
+        name: "GL Coconut Water Chocolate",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/Greenleaf%2FG10%20Background%20Removed.png?alt=media&token=4a39fbfd-7440-4049-bd71-37a6471921d9",
+      },
+    ],
+  },
+
+  heinz: {
+    name: "Heinz",
+    slug: "heinz",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/heinz%2Fheinz-avs-1.png?alt=media&token=801953e7-8bf1-4588-9a0f-3697bb9320cc",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/heinz%2Fheinz_hero_creative.jpeg?alt=media&token=cfd4fec7-00c0-4701-bc49-148b7f72c554",
+    description:
+      "Heinz is the undisputed giant of tomato ketchup, controlling over half of the U.S. market. Founded in 1869, the brand actually started with horseradish sold in clear glass bottles to prove its purity. The famous '57 Varieties' on the label was never an actual product count; the founder just liked the sound of the number. Today, its ketchup, baked beans, and soups are universal diner and household staples used daily for dipping fries and topping burgers.",
+    products: [
+      {
+        name: "Heinz Tomato Ketchup",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/heinz%2Fh1.png?alt=media&token=951b001f-db6e-4069-8a5d-3eb065bcc81e",
+      },
+      {
+        name: "Heinz Smokey BBQ Sauce",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/heinz%2Fh2.png?alt=media&token=88df501c-ed2a-4032-8ce9-d6fea468c3f1",
+      },
+      {
+        name: "Heinz Special Burger Sauce",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/heinz%2Fh3.png?alt=media&token=88df501c-ed2a-4032-8ce9-d6fea468c3f1",
+      },
+      {
+        name: "Heinz SG Mayonnaise",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/heinz%2Fh4.png?alt=media&token=88df501c-ed2a-4032-8ce9-d6fea468c3f1",
+      },
+      {
+        name: "Heinz American Mustard",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/heinz%2Fh5.png?alt=media&token=92e6874c-2318-486b-a6c6-6d4deafb552b",
+      },
+    ],
+  },
+
+  kingcoal: {
+    name: "King Coal",
+    slug: "kingcoal",
+    cardImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/kingcoal%2Fkingcoal-avs-1.png?alt=media&token=801953e7-8bf1-4588-9a0f-3697bb9320cc",
+    heroImage:
+      "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/kingcoal%2Fkingcoal_hero_creative.jpeg?alt=media&token=6874ccbd-ead4-4496-82d2-067f39cf684a",
+    description:
+      "King Coal is a prominent brand in the charcoal market, heavily relied on by both barbecue enthusiasts and shisha users. Instead of using cheap fillers, the brand focuses on producing 100% natural briquettes made entirely from sustainable, raw ingredients like pressed coconut shells.",
+    products: [
+      {
+        name: "BBQ Charcoal Briquettes",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/kingcoal%2F1.png?alt=media&token=0675d03a-f745-487d-b195-e05cf61f6d3c",
+      },
+      {
+        name: "Coconut Charcoal Cubes",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/kingcoal%2F2.png?alt=media&token=1b4a91e2-1e5d-48eb-b6ca-178241f9db5e",
+      },
+      {
+        name: "Coconut Charcoal Hexagon",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/kingcoal%2F3.png?alt=media&token=18d2e2c4-23e0-4ab5-a15c-0e35fbbdac98",
+      },
+      {
+        name: "Hardwood Lump Charcoal",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/kingcoal%2F4.png?alt=media&token=61d4c448-f194-4c78-9bb5-2ab9dab2668c",
+      },
+      {
+        name: "Fire Breads",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/avs-website-27b69.firebasestorage.app/o/kingcoal%2F5.png?alt=media&token=92e6874c-2318-486b-a6c6-6d4deafb552b",
+      },
+    ],
   },
 };
 
